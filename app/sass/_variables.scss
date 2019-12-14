@@ -13,3 +13,10 @@ $dark-color--active: rgba(0, 0, 0, 0.3);
 $menu-color: #766357;
 $menu-color--hover: #604e43;
 $menu-color--active: rgba(118, 99, 87, 0.3);
+
+
+
+@mixin menu-border() {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
