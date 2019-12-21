@@ -13,7 +13,7 @@
 }
 
 .site-list__item {
-  padding: 20px 95px;
+  padding: 7px 0;
   width: 100%;
   background-color: $blue-color;
 
@@ -22,12 +22,13 @@
 
 .site-list__link {
   display: inline-block;
-  width: 150px;
+  // width: 150px;
 
   color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
+  line-height: 2.2;
 }
 //different states for links
 .site-list__item:hover {
