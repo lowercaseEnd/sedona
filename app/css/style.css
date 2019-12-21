@@ -9,9 +9,29 @@ body, html {
 }
 
 .main-nav {
-  background-color: #81b3d2;
+  position: relative;
 }
 
+.logo-image {
+  display: block;
+  position: absolute;
+  top: 294px;
+  left: 110px;
+}
+
+@media (min-width: 768px) {
+  .logo-image {
+    top: 0;
+    left: 334px;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-image {
+    left: 505px;
+    width: 188px;
+    height: 90px;
+  }
+}
 .site-list {
   list-style: none;
   padding: 0;
@@ -24,6 +44,7 @@ body, html {
 .site-list__item {
   padding: 20px 95px;
   width: 100%;
+  background-color: #81b3d2;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
@@ -34,6 +55,97 @@ body, html {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.site-list__item:hover {
+  background-color: #669ec0;
+}
+
+.site-list__item:active {
+  background-color: #5496bd;
+}
+
+.site-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    flex-direction: row;
+    width: 768px;
+  }
+
+  .site-list__item {
+    width: 153px;
+    padding: 15px 0 20px;
+    border: none;
+    background-color: #ffffff;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 153px;
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .site-list__item:hover {
+    background-color: #ffffff;
+  }
+
+  .site-list__link:hover {
+    color: #669ec0;
+  }
+
+  .site-list__item:active {
+    background-color: #ffffff;
+  }
+
+  .site-list__link:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+@media (min-width: 1200px) {
+  .site-list {
+    width: 1200px;
+    justify-content: space-around;
+  }
+
+  .site-list__item {
+    padding-bottom: 16px;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: 175px;
+  }
+}
+.container {
+  background-image: url("../sedona-index-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-image: url("../sedona-index-tablet.jpg");
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    background-image: url("../sedona-index-desktop.jpg");
+    width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
