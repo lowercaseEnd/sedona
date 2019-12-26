@@ -1,5 +1,7 @@
 @import "../variables";
 
-.main-content {
-  margin-top: 70px;
+@media (max-width: $mobile-width-only) {
+  .main-content {
+    margin-top: 70px;
+  }
 }

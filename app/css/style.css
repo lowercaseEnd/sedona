@@ -8,6 +8,18 @@ body, html {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
 .main-nav {
   position: relative;
 }
@@ -67,8 +79,17 @@ body, html {
   .main-nav--closed .site-list__item {
     display: none;
   }
+
+  .main-nav--nojs .menu-toggle::after,
+.main-nav--nojs .menu-toggle::before {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
   .logo-image {
     top: 0;
     left: 334px;
@@ -138,6 +159,7 @@ body, html {
 
   .site-list__link {
     font-size: 14px;
+    line-height: 1.8;
     color: #000000;
   }
 
@@ -164,7 +186,8 @@ body, html {
   }
 
   .site-list__item {
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    padding-top: 13px;
   }
 
   .site-list__item:nth-child(2) {
@@ -196,8 +219,24 @@ body, html {
     width: 1200px;
   }
 }
-.main-content {
-  margin-top: 70px;
+.photo-mountains {
+  min-height: 389px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .photo-mountains {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .main-content {
+    margin-top: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

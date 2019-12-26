@@ -58,9 +58,16 @@
   .main-nav--closed .site-list__item {
     display: none;
   }
+  .main-nav--nojs .menu-toggle::after,
+  .main-nav--nojs .menu-toggle::before {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .menu-toggle {
+    display: none;
+  }
   .logo-image {
     top: 0;
     left: 334px;

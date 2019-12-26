@@ -57,6 +57,7 @@
   }
   .site-list__link {
     font-size: 14px;
+    line-height: 1.8;
     color: $black-color;
   }
   //different states for links
@@ -81,9 +82,13 @@
     justify-content: space-around;
   }
   .site-list__item {
-    padding-bottom: 16px;
+    padding-bottom: 14px;
+    padding-top: 13px;
   }
   .site-list__item:nth-child(2) {
     margin-right: 175px;
+  }
+  .site-list__link {
+    
   }
 }
