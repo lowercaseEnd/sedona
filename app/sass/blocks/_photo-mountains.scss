@@ -1,20 +1,59 @@
 @import "../variables";
 
-
 .photo-mountains {
   min-height: 389px;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   //svg text on the foreground
   text-align: center;
   padding-top: 80px;
+
+  position: relative;
+}
+
+//triangle at the bottom of the picture
+.photo-mountains::after {
+  content: "";
+  position: absolute;
+  top: 362px;
+  left: 0;
+
+  width: 330px;
+  height: 57px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (min-width: $tablet-width) {
   .photo-mountains {
+    min-height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .photo-mountains::after {
+    width: $tablet-width;
+    top: 461px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+  .photo-mountains__text {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-mountains {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    max-width: 1122px;
+    margin: 0 auto;
+  }
+  .photo-mountains::after {
+    width: $desktop-width;
+    // top: 461px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
