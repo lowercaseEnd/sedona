@@ -2,14 +2,17 @@
 
 .advantages-list__item {
   position: relative;
-  
+
   text-align: center;
   
   color: $white-color;
 }
+.advantages-list__item:nth-child(3) {
+  margin-bottom: 280px;
+}
 
 .advantages-list__reason {
-  padding-top: 70px;
+  padding-top: 20px;
   font-size: 21px;
   line-height: 0.5;
 }
@@ -29,11 +32,52 @@
 .advantages-list__item:nth-child(1)::after {
   content: "";
   position: absolute;
-  top: 215px;
+  top: 225px;
   left: 0;
   width: 520px;
   height: 260px;
   background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.advantages-list__item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 205px;
+  left: 0;
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+//box sizes
+.advantages-list__item:nth-child(1n + 4) {
+  color: $dark-color;
+
+}
+.advantages-list__item:nth-child(1) {
+  width: 320px;
+  height: 211px;
+  background-color: $blue-color;
+  padding-top: 30px;
+}
+.advantages-list__item:nth-child(3) {
+  width: 320px;
+  height: 201px;
+  background-color: $blue-color;
+  padding-top: 20px;
+}
+//triangle on top of the first list item
+.advantages-list__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }

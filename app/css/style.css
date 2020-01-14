@@ -332,8 +332,12 @@ ul {
   color: #ffffff;
 }
 
+.advantages-list__item:nth-child(3) {
+  margin-bottom: 280px;
+}
+
 .advantages-list__reason {
-  padding-top: 70px;
+  padding-top: 20px;
   font-size: 21px;
   line-height: 0.5;
 }
@@ -353,13 +357,115 @@ ul {
 .advantages-list__item:nth-child(1)::after {
   content: "";
   position: absolute;
-  top: 215px;
+  top: 225px;
   left: 0;
   width: 520px;
   height: 260px;
   background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.advantages-list__item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 205px;
+  left: 0;
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantages-list__item:nth-child(1n+4) {
+  color: #333333;
+}
+
+.advantages-list__item:nth-child(1) {
+  width: 320px;
+  height: 211px;
+  background-color: #81b3d2;
+  padding-top: 30px;
+}
+
+.advantages-list__item:nth-child(3) {
+  width: 320px;
+  height: 201px;
+  background-color: #81b3d2;
+  padding-top: 20px;
+}
+
+.advantages-list__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 37px;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits-list {
+  margin-top: 290px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.benefits-list__item {
+  color: #333333;
+  text-transform: uppercase;
+  text-align: initial;
+  width: 190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.benefits-list__reason {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.benefits-list__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.benefits-list__item:nth-child(1n):after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits-list__item:nth-child(1):after {
+  top: -5px;
+  left: -42px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+}
+
+.benefits-list__item:nth-child(2):after {
+  top: -5px;
+  left: -42px;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+.benefits-list__item:nth-child(3):after {
+  top: -5px;
+  left: -42px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icon-burger.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+@import "../variables";
+
+.benefits-list {
+  margin-top: 290px;
+
+  //i use flex so it will be easier to rearrange items on tablet
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.benefits-list__item {
+  color: $dark-color;
+  text-transform: uppercase;
+  text-align: initial;
+
+  width: 190px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.benefits-list__reason {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.benefits-list__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+//pictures around text
+.benefits-list__item:nth-child(1n):after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.benefits-list__item:nth-child(1):after {
+  top: -5px;
+  left: -42px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+}
+.benefits-list__item:nth-child(2):after {
+  top: -5px;
+  left: -42px;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+.benefits-list__item:nth-child(3):after {
+  top: -5px;
+  left: -42px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icon-burger.svg");
+}
+
+
+// .benefits-list__item:nth-child(1n + 2) {
+//   margin-top: -20px;
+// }
