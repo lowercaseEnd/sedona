@@ -314,15 +314,52 @@ ul {
 }
 @media (min-width: 768px) {
   .advantages-section__title {
-    padding-top: 15px;
+    padding-top: 45px;
   }
 
   .advantages-section__text {
     padding-top: 11px;
   }
 }
+@media (min-width: 1200px) {
+  .advantages-section__title {
+    padding-top: 15px;
+  }
+}
 .advantages-list__item {
+  position: relative;
+  text-align: center;
   color: #ffffff;
+}
+
+.advantages-list__reason {
+  padding-top: 70px;
+  font-size: 21px;
+  line-height: 0.5;
+}
+
+.advantages-list__text {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.advantages-list__number {
+  font-size: 14px;
+  line-height: 0.7;
+}
+
+.advantages-list__item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 215px;
+  left: 0;
+  width: 520px;
+  height: 260px;
+  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

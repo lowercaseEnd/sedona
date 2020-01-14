@@ -30,9 +30,14 @@
 }
 @media (min-width: $tablet-width) {
   .advantages-section__title {
-    padding-top: 15px;
+    padding-top: 45px;
   }
   .advantages-section__text {
     padding-top: 11px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .advantages-section__title {
+    padding-top: 15px;
   }
 }
