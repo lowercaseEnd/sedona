@@ -1,0 +1,35 @@
+@import "../variables";
+
+.advantages-grey__item {
+  width: 320px;
+  height: 170px;
+  background-color: #eeeeee;
+}
+.advantages-grey__reason {
+  padding-top: 35px;
+  margin-top: 0;
+}
+
+//line at the bottom of two grey boxes
+.advantages-grey__item:nth-child(4)::after,
+.advantages-grey__item:nth-child(5)::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  background-color: #d6d6d6;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-grey {
+    display: flex;
+    width: 768px;
+
+    margin-top: -210px;
+  }
+  .advantages-grey__item {
+    width: 256px;
+  }
+}

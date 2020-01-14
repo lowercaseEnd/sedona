@@ -8,6 +8,13 @@
   flex-direction: column;
   width: 100%;
 }
+@media (min-width: $tablet-width) {
+  .benefits-list {
+    flex-direction: row;
+
+    margin-top: 200px;
+  }
+}
 
 .benefits-list__item {
   color: $dark-color;
@@ -19,6 +26,18 @@
   margin: 0 auto;
 
   position: relative;
+}
+//change order of items
+@media (min-width: $tablet-width) {
+  .benefits-list__item:nth-child(1) {
+    order: 1;
+  }
+  .benefits-list__item:nth-child(2) {
+    order: 3;
+  }
+  .benefits-list__item:nth-child(3) {
+    order: 2;
+  }
 }
 
 .benefits-list__reason {
@@ -63,7 +82,27 @@
   background-image: url("../img/icon-burger.svg");
 }
 
-
+@media (min-width: $tablet-width) {
+  .benefits-list__item:nth-child(1):after {
+    top: -92px;
+    left: 60px;
+    width: 75px;
+    height: 72px;
+  }
+  .benefits-list__item:nth-child(2):after {
+    top: -95px;
+    left: 62px;
+    width: 64px;
+    height: 75px;
+  }
+  
+  .benefits-list__item:nth-child(3):after {
+    top: -89px;
+    left: 56px;
+    width: 77px;
+    height: 68px;
+  }
+}
 // .benefits-list__item:nth-child(1n + 2) {
 //   margin-top: -20px;
 // }
