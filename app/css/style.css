@@ -686,5 +686,47 @@ ul {
     width: 280px;
   }
 }
+.hotel {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .hotel {
+    margin-top: 120px;
+  }
+}
+.hotel__question {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hotel__question {
+    font-size: 30px;
+  }
+}
+.hotel__text {
+  color: #333333;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+.hotel__button {
+  width: 280px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .hotel__button {
+    width: 458px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+@import "../variables";
+
+.hotel {
+  text-align: center;
+  margin-top: 60px;
+}
+@media (min-width: $tablet-width) {
+  .hotel {
+    margin-top: 120px;
+  }
+}
+
+//question
+.hotel__question {
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel__question {
+    font-size: 30px;
+  }
+}
+
+//text
+.hotel__text {
+  color: $dark-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+//button
+.hotel__button {
+  width: 280px;
+  height: 58px;
+
+  background-color: $blue-color;
+
+  border: none;
+
+  color: $white-color;
+
+  font-size: 21px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel__button {
+    width: 458px;
+  }
+}
