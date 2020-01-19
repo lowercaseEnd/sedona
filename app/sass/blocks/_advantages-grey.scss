@@ -1,13 +1,17 @@
 @import "../variables";
 
+
 .advantages-grey__item {
   width: 320px;
   height: 170px;
-  background-color: #eeeeee;
+  color: $dark-color;
 }
 .advantages-grey__reason {
   padding-top: 35px;
   margin-top: 0;
+}
+.advantages-grey {
+  background-color: #eeeeee;
 }
 
 //line at the bottom of two grey boxes
@@ -26,10 +30,33 @@
   .advantages-grey {
     display: flex;
     width: 768px;
-
-    margin-top: -210px;
+    margin-top: 52px;
+    padding-top: 24px;
   }
   .advantages-grey__item {
     width: 256px;
+  }
+  .advantages-grey__text {
+    width: 160px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-grey {
+    margin: 0 auto;
+    width: 1127px;
+    margin-top: -4px;
+    padding-top: 23px;
+  }
+  .advantages-grey__item {
+    width: 400px;
+  }
+  .advantages-grey__reason {
+    width: 110px;
+    margin: 0 auto;
+  }
+  .advantages-grey__text {
+    width: 280px;
   }
 }
