@@ -1,0 +1,59 @@
+@import "../variables";
+
+.main-footer__hashtag {
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__hashtag {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 648px;
+    margin: 40px auto 0;
+
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: 900px;
+    justify-content: space-between;
+  }
+}
+
+.main-footer__by {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 36px;
+
+}
+.html-svg {
+  width: 47px;
+  height: 44px;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__by {
+    margin: 0;
+  }
+}

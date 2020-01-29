@@ -48,7 +48,7 @@
   }
   .site-list__item {
     width: 153px;
-    padding: 15px 0 20px;
+    padding: 15px 0 16px;
     border: none;
     background-color: $white-color;
   }
@@ -79,7 +79,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: $desktop-width;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .site-list__item {
     padding-bottom: 14px;

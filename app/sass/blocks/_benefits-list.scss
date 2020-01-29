@@ -1,9 +1,8 @@
 @import "../variables";
 
 .benefits-list {
-  margin-top: 290px;
+  margin-top: 292px;
 
-  //i use flex so it will be easier to rearrange items on tablet
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -32,6 +31,13 @@
 
   position: relative;
 }
+.benefits-list__item:nth-child(2) {
+  margin-top: 20px;
+}
+.benefits-list__item:nth-child(3) {
+  margin-top: 15px;
+}
+
 //change order of items
 @media (min-width: $tablet-width) {
   .benefits-list__item:nth-child(1) {
@@ -58,15 +64,18 @@
   margin-top: 0;
   color: $black-color;
 }
+
 .benefits-list__text {
   font-size: 14px;
   line-height: 1.5;
   color: $dark-color;
+  width: 220px;
 }
 @media (min-width: $tablet-width) {
   .benefits-list__reason {
     font-size: 21px;
     line-height: 1.2;
+    text-align: center;
   }
 }
 
@@ -85,16 +94,16 @@
   background-image: url("../img/icon-house.svg");
 }
 .benefits-list__item:nth-child(2):after {
-  top: -5px;
-  left: -42px;
+  top: 7px;
+  left: -40px;
   width: 32px;
   height: 38px;
   background-image: url("../img/icon-gift.svg");
 }
 
 .benefits-list__item:nth-child(3):after {
-  top: -5px;
-  left: -42px;
+  top: -6px;
+  left: -47px;
   width: 40px;
   height: 35px;
   background-image: url("../img/icon-burger.svg");
@@ -113,7 +122,7 @@
     width: 64px;
     height: 75px;
   }
-  
+
   .benefits-list__item:nth-child(3):after {
     top: -89px;
     left: 56px;
@@ -125,13 +134,13 @@
 @media (min-width: $desktop-width) {
   .benefits-list__item:nth-child(1)::after {
     top: -87px;
-    left: 85px;;
+    left: 85px;
   }
   .benefits-list__item:nth-child(2):after {
     top: -90px;
     left: 38px;
   }
-  
+
   .benefits-list__item:nth-child(3):after {
     top: -83px;
     left: 56px;

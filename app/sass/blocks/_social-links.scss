@@ -1,0 +1,28 @@
+@import "../variables";
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social-links {
+    width: 150px;
+    margin-left: 115px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .social-links {
+    margin: 0;
+  }
+}
+
+.social-svg {
+  background-color: $blue-color;
+  padding: 13px;
+  width: 48px;
+  height: 49px;
+}
