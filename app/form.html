@@ -12,9 +12,9 @@
     <header class="main-header">
       <nav class="main-nav main-nav--nojs main-nav--opened">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a class="site-list__link">главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
           <li class="site-list__item"><a class="site-list__link" href="photo.html">фото и видео</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">форма отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__item--active">форма отзыва</a></li>
           <li class="site-list__item"><a class="site-list__link" href="#">html academy</a></li>
         </ul>
         <button type="button" class="menu-toggle" title="Открыть меню"></button>
@@ -26,7 +26,59 @@
       </nav>
     </header>
     <main class="main-content">
-      
+      <h1 class="visually-hidden">Страница для отправки отзывов</h1>
+      <section class="photo-mountains photo-mountains--form">
+        <img width="282" height="214" src="img/text-sedona.svg" class="photo-mountains__text"
+          alt="Добро пожаловать в Седону">
+      </section>
+      <section class="review">
+        <h2 class="review__header">Оставьте свой отзыв</h2>
+        <p class="review__help">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form action="" class="review__form form-main">
+          <fieldset class="form-main__name">
+            <legend class="form-main__title">Представтесь:</legend>
+            <label for="name">Имя<sup>*</sup>:</label>
+            <input type="text" name="" id="name">
+            <label for="last-name">Фамилия<sup>*</sup>:</label>
+            <input type="text" name="" id="last-name">
+            <label for="father-name">Отчество<sup>*</sup>:</label>
+            <input type="text" name="" id="father-name">
+          </fieldset>
+          <fieldset class="form-main__contact-info">
+            <legend class="form-main__title">Контактная информация:</legend>
+            <label for="phone">Контактный телефон<sup>*</sup>:</label>
+            <input type="number" name="" id="phone">
+            <label for="email">Электронная почта<sup>*</sup>:</label>
+            <input type="email" name="" id="email">
+          </fieldset>
+          <fieldset class="form-main__score">
+            <legend class="form-main__title">ВАше Общее впечатление:</legend>
+            <label for="good">Скорее положительное</label>
+            <input type="radio" name="impression" id="good">
+            <label for="bad">Скорее отрицательное</label>
+            <input type="radio" name="impression" id="bad">
+            <label for="not-sure">Затрудняюсь ответить</label>
+            <input type="radio" name="impression" id="not-sure">
+          </fieldset>
+          <fieldset class="form-main__sights">
+            <legend class="form-main__title">посещенные 
+              достопримечательности:</legend>
+            <label for="devils-bridge">Мост Дьявола</label>
+            <input type="checkbox" name="" id="devils-bridge">
+            <label for="mountain">Гора-Колокол</label>
+            <input type="checkbox" name="" id="mountain">
+            <label for="slide-park">Слайд-парк</label>
+            <input type="checkbox" name="" id="slide-park">
+            <label for="red-mountains">Красные скалы</label>
+            <input type="checkbox" name="" id="red-mountains">
+          </fieldset>
+          <fieldset class="form-main__emotions">
+            <legend class="form-main__title">Опишите свои эмоции:</legend>
+            <fieldset>Опишите подробно все свои восторги </fieldset>
+          </fieldset>
+          <button type="submit" class="button">ОТПРАВИТЬ ОТЗЫВ</button>
+        </form>
+      </section>
     </main>
     <footer class="main-footer">
       <p class="main-footer__hashtag"><b>#visitsedona</b></p>

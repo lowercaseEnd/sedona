@@ -46,7 +46,7 @@
   }
 }
 //button
-.hotel__button {
+.button {
   width: 280px;
   height: 58px;
 
@@ -65,14 +65,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hotel__button {
+  .button {
     width: 458px;
 
     margin-top: 54px;
   }
 }
 @media (min-width: $desktop-width) {
-  .hotel__button {
+  .button {
     margin-top: 30px;
 
     width: 429px;

@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.photo-mountains--form {
+  min-height: 159px;
+  padding-top: 0;
+}
 //triangle at the bottom of the picture
 .photo-mountains::after {
   content: "";

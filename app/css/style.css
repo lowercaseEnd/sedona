@@ -207,6 +207,7 @@ ul {
   }
 }
 .container {
+  background-image: url("../sedona-form-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -220,11 +221,13 @@ ul {
 
 @media (min-width: 768px) {
   .container {
+    background-image: url("../sedona-form-tablet.jpg");
     width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .container {
+    background-image: url("../sedona-form-desktop.jpg");
     width: 1200px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
@@ -237,6 +240,11 @@ ul {
   text-align: center;
   padding-top: 80px;
   position: relative;
+}
+
+.photo-mountains--form {
+  min-height: 159px;
+  padding-top: 0;
 }
 
 .photo-mountains::after {
@@ -794,7 +802,7 @@ ul {
     margin: 0 auto;
   }
 }
-.hotel__button {
+.button {
   width: 280px;
   height: 58px;
   background-color: #81b3d2;
@@ -808,13 +816,13 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .hotel__button {
+  .button {
     width: 458px;
     margin-top: 54px;
   }
 }
 @media (min-width: 1200px) {
-  .hotel__button {
+  .button {
     margin-top: 30px;
     width: 429px;
     height: 55px;
