@@ -1,7 +1,14 @@
+@import "./variables";
+
 body, html {
   padding: 0;
   margin: 0;
   font-size: 18px;
+}
+@media (min-width: $desktop-width) {
+  body, html {
+    background-color: #f2f2f2;
+  }
 }
 
 *, *::after, *::before {
