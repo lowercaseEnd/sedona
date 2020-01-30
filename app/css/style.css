@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body, html {
-  font-family: PTSans, sans-serif;
+  font-family: PTSans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -34,16 +34,18 @@ ul {
 }
 
 @font-face {
-  font-family: PTSans, sans-serif;
+  font-family: PTSans;
   src: url("../fonts/ptsans.woff2") format("woff2") б url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: PTSans, sans-serif;
+  font-family: PTSans;
   src: url("../fonts/ptsansbold.woff2") format("woff2") б url("../fonts/ptsansbold.woff") format("woff");
   font-style: bold;
   font-weight: bold;
+  font-display: swap;
 }
 .main-nav {
   position: relative;
