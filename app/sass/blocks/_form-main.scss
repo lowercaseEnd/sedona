@@ -1,5 +1,17 @@
 @import "../variables";
 
+
+
+//common styles
+.input-text {
+  border: none;
+  height: 58px;
+  background-color: $bg-color;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
 .form-main__field {
   border: none;
 }
@@ -11,6 +23,7 @@
   text-align: center;
 }
 
+
 //labels
 .form-main__label {
   text-transform: uppercase;
@@ -18,9 +31,25 @@
   line-height: 1.4;
   color: $dark-color;
 }
-.form-main__label--bold {
-  font-weight: bold;
-} 
+
+
+//name info
+.form-main__name--container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  align-items: center;
+}
+
+.input-text--name {
+  width: 230px;
+}
+.input-text--last-name {
+  width: 192px;
+}
+.input-text--father-name {
+  width: 194px;
+}
 
 //contact info
 .form-main__field--container {
@@ -73,39 +102,46 @@
   flex-direction: row-reverse;
   width: 100%;
   flex-wrap: wrap;
-}
+  align-items: center;
 
+  margin-top: 20px;
+}
+.form-main__radio {
+  display: none;
+}
 .form-main__field{
   margin-top: 35px;
 }
+.form-main__label--bold {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: initial;
 
-//common styles
-.input-text {
-  border: none;
-  height: 58px;
+} 
+.form-main__label--radio {
+  position: relative;
+  margin-bottom: 60px;
+}
+.form-main__label--radio::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -80px;
+
+  width: 60px;
+  height: 55px;
   background-color: $bg-color;
-  margin-left: 10px;
-  margin-top: 20px;
+  border-radius: 50%;
 }
+.form-main__radio:checked + .form-main__label--radio::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -61px;
 
-//name info
-.form-main__name--container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 320px;
-  align-items: center;
+  width: 23px;
+  height: 23px;
+  background-color: $dark-color;
+  border-radius: 50%;
+  z-index: 2;
 }
-
-//input fields -- name
-
-.input-text--name {
-  width: 230px;
-}
-.input-text--last-name {
-  width: 192px;
-}
-.input-text--father-name {
-  width: 194px;
-}
-
-//contact info
