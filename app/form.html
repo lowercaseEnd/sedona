@@ -78,18 +78,29 @@
           <fieldset class="form-main__field form-main__sights">
             <legend class="form-main__title">посещенные
               достопримечательности:</legend>
-            <input type="checkbox" name="" id="devils-bridge">
-            <label class="form-main__label" for="devils-bridge form-main__label--bold">Мост Дьявола</label
-              class="form-main__label">
-            <input type="checkbox" name="" id="mountain">
-            <label class="form-main__label form-main__label--bold" for="mountain">Гора-Колокол</label
-              class="form-main__label">
-            <input type="checkbox" name="" id="slide-park">
-            <label class="form-main__label form-main__label--bold" for="slide-park">Слайд-парк</label
-              class="form-main__label">
-            <input type="checkbox" name="" id="red-mountains">
-            <label class="form-main__label form-main__label--bold" for="red-mountains">Красные скалы</label
-              class="form-main__label">
+            <ul class="sights-list">
+              <li class="sights-list__item">
+                <input checked class="sights-list__checkbox" type="checkbox" name="sights" id="devils-bridge">
+                <label class="form-main__label form-main__label--bold 
+                sights-list__label" for="devils-bridge">Мост Дьявола</label
+                  class="form-main__label">
+              </li>
+              <li class="sights-list__item">
+                <input class="sights-list__checkbox" type="checkbox" name="sights" id="mountain">
+                <label class="form-main__label form-main__label--bold sights-list__label" for="mountain">Гора-Колокол</label>
+              </li>
+              <li class="sights-list__item">
+                <input class="sights-list__checkbox" type="checkbox" name="sights" id="slide-park">
+                <label class="form-main__label form-main__label--bold sights-list__label" for="slide-park">Слайд-парк</label>
+              </li>
+              <li class="sights-list__item">
+                <input class="sights-list__checkbox" type="checkbox" name="sights" id="red-mountains">
+                <label class="form-main__label form-main__label--bold sights-list__label" for="red-mountains">Красные скалы</label>
+              </li>
+              
+              
+             
+              </ul>
           </fieldset>
           <fieldset class="form-main__field form-main__emotions">
             <legend class="form-main__title">Опишите свои эмоции:</legend>
