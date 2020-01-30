@@ -10,7 +10,13 @@
   margin-left: 10px;
   margin-top: 20px;
 }
-
+.input-text:hover {
+  background-color: $disabled-color;
+}
+.input-text:active {
+  background-color: $white-color;
+  border: 4px solid $bg-color;
+}
 
 .form-main__field {
   border: none;
@@ -48,10 +54,10 @@
 }
 
 .input-text--name {
-  width: 230px;
+  width: 239px;
 }
 .input-text--last-name {
-  width: 192px;
+  width: 200px;
 }
 .input-text--father-name {
   width: 194px;
@@ -85,7 +91,7 @@
 .form-main__field--container::after {
   content: "";
   position: absolute;
-  top: 143px;
+  top: 142px;
   left: 231px;
 
   width: 58px;
@@ -99,7 +105,7 @@
   background-position: center;
 }
 .input-text--number, .input-text--email {
-  width: 220px;
+  width: 221px;
 }
 
 //radio buttons
@@ -111,4 +117,16 @@
 //checkboxes
 .form-main__sights {
   margin-top: 0;
+}
+//text-area
+.form-main__textarea {
+  width: 279px;
+  height: 160px;
+  background-color: $bg-color;
+  resize: none;
+}
+
+//text that does not appear on mobile
+.important--tablet {
+  display: none;
 }

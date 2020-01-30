@@ -13,22 +13,24 @@
 
   position: relative;
 }
-
+//photo in form.html
 .photo-mountains--form {
-  min-height: 159px;
-  padding-top: 0;
-  &::after {
-    content: "";
-  position: absolute;
-  top: 192px;
-  left: 0;
-
-  width: 330px;
-  height: 57px;
-
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 425px;
+    left: 101px;
+
+    width: 330px;
+    height: 57px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 //triangle at the bottom of the picture

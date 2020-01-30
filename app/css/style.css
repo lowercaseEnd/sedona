@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   font-family: PTSans, sans-serif;
   padding: 0;
@@ -34,25 +35,13 @@ ul {
 
 @font-face {
   font-family: PTSans, sans-serif;
-  src: url("../fonts/ptsans.woff2") format("woff2");
+  src: url("../fonts/ptsans.woff2") format("woff2") б url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: PTSans, sans-serif;
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: PTSans, sans-serif;
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-style: bold;
-  font-weight: bold;
-}
-@font-face {
-  font-family: PTSans, sans-serif;
-  src: url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2") б url("../fonts/ptsansbold.woff") format("woff");
   font-style: bold;
   font-weight: bold;
 }
@@ -234,7 +223,7 @@ ul {
 .container {
   background-image: url("../sedona-form-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .container {
@@ -268,14 +257,16 @@ ul {
 }
 
 .photo-mountains--form {
-  min-height: 159px;
-  padding-top: 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
 }
 .photo-mountains--form::after {
   content: "";
   position: absolute;
-  top: 192px;
-  left: 0;
+  top: 425px;
+  left: 101px;
   width: 330px;
   height: 57px;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
@@ -990,6 +981,15 @@ ul {
   margin-top: 20px;
 }
 
+.input-text:hover {
+  background-color: #e5e5e5;
+}
+
+.input-text:active {
+  background-color: #ffffff;
+  border: 4px solid #f2f2f2;
+}
+
 .form-main__field {
   border: none;
 }
@@ -1024,11 +1024,11 @@ ul {
 }
 
 .input-text--name {
-  width: 230px;
+  width: 239px;
 }
 
 .input-text--last-name {
-  width: 192px;
+  width: 200px;
 }
 
 .input-text--father-name {
@@ -1060,7 +1060,7 @@ ul {
 .form-main__field--container::after {
   content: "";
   position: absolute;
-  top: 143px;
+  top: 142px;
   left: 231px;
   width: 58px;
   height: 58px;
@@ -1072,7 +1072,7 @@ ul {
 }
 
 .input-text--number, .input-text--email {
-  width: 220px;
+  width: 221px;
 }
 
 .form-main__field {
@@ -1081,6 +1081,17 @@ ul {
 
 .form-main__sights {
   margin-top: 0;
+}
+
+.form-main__textarea {
+  width: 279px;
+  height: 160px;
+  background-color: #f2f2f2;
+  resize: none;
+}
+
+.important--tablet {
+  display: none;
 }
 
 .score-list {
@@ -1093,7 +1104,8 @@ ul {
 }
 
 .score-list__item {
-  margin-bottom: 60px;
+  width: 210px;
+  margin: 0 auto 60px;
 }
 
 .score-list__radio {
@@ -1125,6 +1137,18 @@ ul {
   background-color: #333333;
   border-radius: 50%;
   z-index: 2;
+}
+
+.score-list__label:hover::after {
+  background-color: #e5e5e5;
+}
+
+.score-list__label:active::after {
+  background-color: #d5d5d5;
+}
+
+.score-list__radio:checked + .score-list__label:active::before {
+  opacity: 0.3;
 }
 
 .sights-list {
