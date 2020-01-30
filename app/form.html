@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="container">
     <header class="main-header">
@@ -27,56 +29,68 @@
     </header>
     <main class="main-content">
       <h1 class="visually-hidden">Страница для отправки отзывов</h1>
-      <section class="photo-mountains photo-mountains--form">
+      <section class="photo-mountains--form">
         <img width="282" height="214" src="img/text-sedona.svg" class="photo-mountains__text"
           alt="Добро пожаловать в Седону">
       </section>
       <section class="review">
         <h2 class="review__header">Оставьте свой отзыв</h2>
-        <p class="review__help">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="review__help">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
         <form action="" class="review__form form-main">
-          <fieldset class="form-main__name">
+          <fieldset class="form-main__field form-main__name">
             <legend class="form-main__title">Представтесь:</legend>
-            <label for="name">Имя<sup>*</sup>:</label>
-            <input type="text" name="" id="name">
-            <label for="last-name">Фамилия<sup>*</sup>:</label>
-            <input type="text" name="" id="last-name">
-            <label for="father-name">Отчество<sup>*</sup>:</label>
-            <input type="text" name="" id="father-name">
+            <div class="form-main__name--container">
+              <label class="form-main__label" for="name">Имя<sup>*</sup>:</label>
+              <input class="input-text input-text--name" type="text" name="" id="name" placeholder="Пётр">
+              <label class="form-main__label" for="last-name">Фамилия<sup>*</sup>:</label class="form-main__label">
+              <input class="input-text input-text--last-name" type="text" name="" id="last-name" placeholder="Иванов">
+              <label class="form-main__label" for="father-name">Отчество<sup>*</sup>:</label class="form-main__label">
+              <input class="input-text input-text--father-name" type="text" name="" id="father-name" placeholder="Александрович">
+            </div>
           </fieldset>
-          <fieldset class="form-main__contact-info">
+          <fieldset class="form-main__field form-main__contact-info">
             <legend class="form-main__title">Контактная информация:</legend>
-            <label for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input type="number" name="" id="phone">
-            <label for="email">Электронная почта<sup>*</sup>:</label>
-            <input type="email" name="" id="email">
+            <div class="form-main__field--container">
+              <label class="form-main__label" for="phone">Контактный телефон<sup>*</sup>:</label class="form-main__label">
+              <input class="input-text input-text--number"  type="number" name="" id="phone">
+              <label class="form-main__label" for="email">Электронная почта<sup>*</sup>:</label class="form-main__label">
+              <input class="input-text input-text--email" type="email" name="" id="email">
+            </div>
           </fieldset>
-          <fieldset class="form-main__score">
+          <fieldset class="form-main__field form-main__score">
             <legend class="form-main__title">ВАше Общее впечатление:</legend>
-            <label for="good">Скорее положительное</label>
-            <input type="radio" name="impression" id="good">
-            <label for="bad">Скорее отрицательное</label>
-            <input type="radio" name="impression" id="bad">
-            <label for="not-sure">Затрудняюсь ответить</label>
-            <input type="radio" name="impression" id="not-sure">
+            <div class="form-main__score--container">
+              <label class="form-main__label form-main__label--bold" for="good">Скорее положительное</label>
+              <input type="radio" name="impression" id="good">
+              <label class="form-main__label form-main__label--bold" for="bad">Скорее отрицательное</label>
+              <input type="radio" name="impression" id="bad">
+              <label class="form-main__label form-main__label--bold" for="not-sure">Затрудняюсь ответить</label class="form-main__label">
+              <input type="radio" name="impression" id="not-sure">
+            </div>
           </fieldset>
-          <fieldset class="form-main__sights">
-            <legend class="form-main__title">посещенные 
+          <fieldset class="form-main__field form-main__sights">
+            <legend class="form-main__title">посещенные
               достопримечательности:</legend>
-            <label for="devils-bridge">Мост Дьявола</label>
+            <label class="form-main__label" for="devils-bridge form-main__label--bold">Мост Дьявола</label class="form-main__label">
             <input type="checkbox" name="" id="devils-bridge">
-            <label for="mountain">Гора-Колокол</label>
+            <label class="form-main__label form-main__label--bold" for="mountain">Гора-Колокол</label class="form-main__label">
             <input type="checkbox" name="" id="mountain">
-            <label for="slide-park">Слайд-парк</label>
+            <label class="form-main__label form-main__label--bold" for="slide-park">Слайд-парк</label class="form-main__label">
             <input type="checkbox" name="" id="slide-park">
-            <label for="red-mountains">Красные скалы</label>
+            <label class="form-main__label form-main__label--bold" for="red-mountains">Красные скалы</label class="form-main__label">
             <input type="checkbox" name="" id="red-mountains">
           </fieldset>
-          <fieldset class="form-main__emotions">
+          <fieldset class="form-main__field form-main__emotions">
             <legend class="form-main__title">Опишите свои эмоции:</legend>
-            <fieldset>Опишите подробно все свои восторги </fieldset>
+            <textarea>Опишите подробно все свои восторги </textarea>
           </fieldset>
-          <button type="submit" class="button">ОТПРАВИТЬ ОТЗЫВ</button>
+          <fieldset class="form-main__field form-main__send">
+            <legend class="visually-hidden">Отправить форму</legend>
+            <button type="submit" class="button">ОТПРАВИТЬ ОТЗЫВ</button>
+            <p class="important--tablet">* — обязательные поля</p>
+          </fieldset>
+
         </form>
       </section>
     </main>
@@ -127,4 +141,5 @@
   </div>
   <script src="js/nav.js"></script>
 </body>
+
 </html>

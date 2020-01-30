@@ -1,0 +1,19 @@
+@import "../variables";
+
+.review__header {
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black-color;
+  width: 230px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.review__help {
+  font-size: 14px;
+  line-height: 1.7;
+  color: $dark-color;
+  width: 270px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}

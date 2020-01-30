@@ -1,4 +1,5 @@
 body, html {
+  font-family: PTSans, sans-serif;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -31,6 +32,30 @@ ul {
   /* added line */
 }
 
+@font-face {
+  font-family: PTSans, sans-serif;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: PTSans, sans-serif;
+  src: url("../fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: PTSans, sans-serif;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-style: bold;
+  font-weight: bold;
+}
+@font-face {
+  font-family: PTSans, sans-serif;
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-style: bold;
+  font-weight: bold;
+}
 .main-nav {
   position: relative;
 }
@@ -245,6 +270,17 @@ ul {
 .photo-mountains--form {
   min-height: 159px;
   padding-top: 0;
+}
+.photo-mountains--form::after {
+  content: "";
+  position: absolute;
+  top: 192px;
+  left: 0;
+  width: 330px;
+  height: 57px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .photo-mountains::after {
@@ -926,6 +962,125 @@ ul {
   .map__picture {
     width: 1200px;
   }
+}
+.review__header {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  width: 230px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.review__help {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333333;
+  width: 270px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-main__field {
+  border: none;
+}
+
+.form-main__title {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-main__label {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.form-main__label--bold {
+  font-weight: bold;
+}
+
+.form-main__field--container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.form-main__field--container::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 231px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  display: block;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+}
+
+.form-main__field--container::after {
+  content: "";
+  position: absolute;
+  top: 143px;
+  left: 231px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  background-position: center;
+}
+
+.input-text--number, .input-text--email {
+  width: 220px;
+}
+
+.form-main__score--container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form-main__field {
+  margin-top: 35px;
+}
+
+.input-text {
+  border: none;
+  height: 58px;
+  background-color: #f2f2f2;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.form-main__name--container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  align-items: center;
+}
+
+.input-text--name {
+  width: 230px;
+}
+
+.input-text--last-name {
+  width: 192px;
+}
+
+.input-text--father-name {
+  width: 194px;
 }
 
 /*# sourceMappingURL=style.css.map */

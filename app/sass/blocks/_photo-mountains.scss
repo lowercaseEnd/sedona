@@ -17,6 +17,19 @@
 .photo-mountains--form {
   min-height: 159px;
   padding-top: 0;
+  &::after {
+    content: "";
+  position: absolute;
+  top: 192px;
+  left: 0;
+
+  width: 330px;
+  height: 57px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
 }
 //triangle at the bottom of the picture
 .photo-mountains::after {
