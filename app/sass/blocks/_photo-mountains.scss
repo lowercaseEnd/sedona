@@ -6,7 +6,9 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
+  @media (min-resolution: $min-dpi), (min-resolution: $min-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
   //svg text on the foreground
   text-align: center;
   padding-top: 80px;
@@ -32,6 +34,9 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  @media (min-resolution: $min-dpi), (min-resolution: $min-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 //triangle at the bottom of the picture
 .photo-mountains::after {
@@ -52,6 +57,9 @@
   .photo-mountains {
     min-height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media (min-resolution: $min-dpi), (min-resolution: $min-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
   .photo-mountains::after {
     width: $tablet-width;
@@ -67,6 +75,9 @@
 @media (min-width: $desktop-width) {
   .photo-mountains {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    @media (min-resolution: $min-dpi), (min-resolution: $min-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
     max-width: 1200px;
     margin: 0 auto;
   }
