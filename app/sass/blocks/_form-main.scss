@@ -32,7 +32,12 @@
   line-height: 1.4;
   color: $dark-color;
 }
+.form-main__label--bold {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: initial;
 
+} 
 
 //name info
 .form-main__name--container {
@@ -98,54 +103,11 @@
 }
 
 //radio buttons
-.form-main__score--container {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
 
-  margin-top: 20px;
-}
-.form-main__radio {
-  display: none;
-}
 .form-main__field{
   margin-top: 35px;
 }
-.form-main__label--bold {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: initial;
 
-} 
-.form-main__label--radio {
-  position: relative;
-  margin-bottom: 60px;
-}
-.form-main__label--radio::after {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -80px;
-
-  width: 60px;
-  height: 55px;
-  background-color: $bg-color;
-  border-radius: 50%;
-}
-.form-main__radio:checked + .form-main__label--radio::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -61px;
-
-  width: 23px;
-  height: 23px;
-  background-color: $dark-color;
-  border-radius: 50%;
-  z-index: 2;
-}
 //checkboxes
 .form-main__sights {
   margin-top: 0;

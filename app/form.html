@@ -63,17 +63,26 @@
           </fieldset>
           <fieldset class="form-main__field form-main__score">
             <legend class="form-main__title">ВАше Общее впечатление:</legend>
-            <div class="form-main__score--container">
-              <input class="form-main__radio" type="radio" name="impression" id="good">
-              <label class="form-main__label form-main__label--bold form-main__label--radio" for="good">Скорее
-                положительное</label>
-              <input class="form-main__radio" type="radio" name="impression" id="bad">
-              <label class="form-main__label form-main__label--bold form-main__label--radio" for="bad">Скорее
-                отрицательное</label>
-              <input class="form-main__radio" type="radio" name="impression" id="not-sure">
-              <label class="form-main__label form-main__label--bold form-main__label--radio" for="not-sure">Затрудняюсь
-                ответить</label class="form-main__label">
-            </div>
+            <ul class="score-list">
+              <li class="score-list__item">
+                <input class="score-list__radio" type="radio" name="impression" id="good">
+                <label class="form-main__label form-main__label--bold score-list__label" for="good">Скорее
+                  положительное</label>
+              </li>
+              <li class="score-list__item">
+                <input class="score-list__radio" type="radio" name="impression" id="bad">
+                <label class="form-main__label form-main__label--bold score-list__label" for="bad">Скорее
+                  отрицательное</label>
+              </li>
+              <li class="score-list__item">
+                <input class="score-list__radio" type="radio" name="impression" id="not-sure">
+                <label class="form-main__label form-main__label--bold score-list__label" for="not-sure">Затрудняюсь
+                  ответить</label>
+              </li>
+              
+             
+             
+              </ul>
           </fieldset>
           <fieldset class="form-main__field form-main__sights">
             <legend class="form-main__title">посещенные
@@ -82,25 +91,24 @@
               <li class="sights-list__item">
                 <input checked class="sights-list__checkbox" type="checkbox" name="sights" id="devils-bridge">
                 <label class="form-main__label form-main__label--bold 
-                sights-list__label" for="devils-bridge">Мост Дьявола</label
-                  class="form-main__label">
+                sights-list__label" for="devils-bridge">Мост Дьявола</label class="form-main__label">
               </li>
               <li class="sights-list__item">
                 <input class="sights-list__checkbox" type="checkbox" name="sights" id="mountain">
-                <label class="form-main__label form-main__label--bold sights-list__label" for="mountain">Гора-Колокол</label>
+                <label class="form-main__label form-main__label--bold sights-list__label"
+                  for="mountain">Гора-Колокол</label>
               </li>
               <li class="sights-list__item">
                 <input class="sights-list__checkbox" type="checkbox" name="sights" id="slide-park">
-                <label class="form-main__label form-main__label--bold sights-list__label" for="slide-park">Слайд-парк</label>
+                <label class="form-main__label form-main__label--bold sights-list__label"
+                  for="slide-park">Слайд-парк</label>
               </li>
               <li class="sights-list__item">
                 <input class="sights-list__checkbox" type="checkbox" name="sights" id="red-mountains">
-                <label class="form-main__label form-main__label--bold sights-list__label" for="red-mountains">Красные скалы</label>
+                <label class="form-main__label form-main__label--bold sights-list__label" for="red-mountains">Красные
+                  скалы</label>
               </li>
-              
-              
-             
-              </ul>
+            </ul>
           </fieldset>
           <fieldset class="form-main__field form-main__emotions">
             <legend class="form-main__title">Опишите свои эмоции:</legend>
