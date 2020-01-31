@@ -1,0 +1,64 @@
+@import "../variables";
+
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+.photo-list__item {
+  width: 280px;
+
+}
+.photo-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+//photo
+.photo-list__photo {
+  display: block;
+}
+
+//photo info
+.photo-list__title,
+.photo-list__author,
+.photo-list__likes {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.photo-list__title,
+.photo-list__likes {
+  color: $black-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.photo-list__author {
+  color: $dark-color;
+  margin-top: 0;
+}
+.photo-list__title {
+  margin-bottom: 0;
+}
+
+//like icon
+.photo-list__likes {
+  position: relative;
+  margin-left: 40px;
+}
+.photo-list__likes::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 23px;
+  height: 21px;
+
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  opacity: 0.3;
+}
