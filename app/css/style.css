@@ -1096,6 +1096,7 @@ ul {
 .form-main__field {
   border: none;
   margin-top: 35px;
+  padding: 0;
 }
 
 .form-main__title {
@@ -1241,7 +1242,8 @@ ul {
 
 .score-list__item {
   width: 210px;
-  margin: 0 auto 60px;
+  margin-right: 0px;
+  margin-bottom: 50px;
 }
 
 .score-list__radio {
@@ -1390,7 +1392,7 @@ ul {
 .contact-list::before {
   content: "";
   position: absolute;
-  top: 44px;
+  top: 38px;
   left: 231px;
   width: 58px;
   height: 58px;
@@ -1405,7 +1407,7 @@ ul {
 .contact-list::after {
   content: "";
   position: absolute;
-  top: 144px;
+  top: 134px;
   left: 231px;
   width: 58px;
   height: 58px;
@@ -1418,6 +1420,11 @@ ul {
 
 .contact-list__email, .contact-list__number {
   width: 221px;
+  margin-top: 14px;
+}
+
+.contact-list__label {
+  margin-left: 40px;
 }
 
 @media (min-width: 768px) {
