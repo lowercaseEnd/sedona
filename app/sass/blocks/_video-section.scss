@@ -23,3 +23,16 @@
   text-transform: uppercase;
   margin: 0 auto 40px;
 }
+@media (min-width: $tablet-width) {
+  .video-section {
+    margin-top: 70px;
+  }
+  .video-section__header {
+    font-size: 30px;
+    line-height: 0.8;
+    width: 390px;
+  }
+  .video-section__text {
+    width: 450px;
+  }
+}

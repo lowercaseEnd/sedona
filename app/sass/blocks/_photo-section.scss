@@ -19,3 +19,16 @@
   text-transform: uppercase;
   margin: 0 auto;
 }
+@media (min-width: $tablet-width) {
+  .photo-section {
+    margin-top: 70px;
+  }
+  .photo-section__header {
+    font-size: 30px;
+    line-height: 0.8;
+    width: 240px;
+  }
+  .photo-section__text {
+    width: 450px;
+  }
+}

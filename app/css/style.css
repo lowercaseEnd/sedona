@@ -1635,15 +1635,46 @@ ul {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .photo-list {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 75px;
+  }
+}
+.photo-list__photo {
+  display: block;
+  margin-top: 47px;
+}
+
+@media (min-width: 768px) {
+  .photo-list__photo {
+    margin-top: 0;
+  }
+
+  .photo-list__item,
+.photo-list__photo {
+    width: 324px;
+  }
+
+  .photo-list__photo {
+    height: 267px;
+  }
+
+  .photo-list__item--main,
+.photo-list__photo--main {
+    width: 648px;
+  }
+
+  .photo-list__photo--main {
+    height: 400px;
+  }
+}
 .photo-info {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.photo-list__photo {
-  display: block;
-  margin-top: 47px;
 }
 
 .photo-list__title,
@@ -1669,6 +1700,27 @@ ul {
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .photo-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-list__likes {
+    margin-right: 20px;
+  }
+
+  .photo-info--person {
+    margin-left: 20px;
+  }
+
+  .photo-list__item:nth-child(3) .photo-info {
+    background-color: #eaeaea;
+  }
+}
 .photo-list__likes {
   position: relative;
   margin-left: 40px;
@@ -1707,6 +1759,12 @@ ul {
   background-color: #f2f2f2;
 }
 
+@media (min-width: 768px) {
+  .photo-list__item::before,
+.photo-list__likes--line::after {
+    content: none;
+  }
+}
 .controls {
   margin-top: -50px;
 }
@@ -1775,6 +1833,21 @@ ul {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .photo-section {
+    margin-top: 70px;
+  }
+
+  .photo-section__header {
+    font-size: 30px;
+    line-height: 0.8;
+    width: 240px;
+  }
+
+  .photo-section__text {
+    width: 450px;
+  }
+}
 .video-section {
   position: relative;
   margin-top: 40px;
@@ -1799,6 +1872,22 @@ ul {
 .video-section__text {
   text-transform: uppercase;
   margin: 0 auto 40px;
+}
+
+@media (min-width: 768px) {
+  .video-section {
+    margin-top: 70px;
+  }
+
+  .video-section__header {
+    font-size: 30px;
+    line-height: 0.8;
+    width: 390px;
+  }
+
+  .video-section__text {
+    width: 450px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
