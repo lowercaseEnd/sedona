@@ -31,5 +31,17 @@
 
 }
 @media (min-width: $desktop-width) { 
-
+  .name-list {
+    margin-top: 10px;
+    width: 410px;
+  }
+  .name-list__name {
+    width: 350px;
+  }
+  .name-list__last-name {
+    width: 310px;
+  }
+  .name-list__father-name {
+    width: 310px;
+  }
 }

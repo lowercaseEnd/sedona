@@ -53,3 +53,12 @@
 .score-list__radio:checked + .score-list__label:active::before {
   opacity: 0.3;
 }
+
+@media (min-width: $desktop-width) {
+  .score-list__item {
+    width: 310px;
+  }
+  .score-list {
+    margin-top: 50px;
+  }
+}

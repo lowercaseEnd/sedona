@@ -3,7 +3,7 @@
 
 //test
 .container {
-  background-image: url("../sedona-form-mobile.jpg");
+  background-image: url("../sedona-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    background-image: url("../sedona-form-tablet.jpg");
+    background-image: url("../sedona-photo-tablet.jpg");
     width: $tablet-width;
   }
 }
