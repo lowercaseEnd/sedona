@@ -8,7 +8,7 @@
 }
 .photo-list__item {
   width: 280px;
-
+  position: relative;
 }
 .photo-info {
   display: flex;
@@ -19,6 +19,7 @@
 //photo
 .photo-list__photo {
   display: block;
+  margin-top: 47px;
 }
 
 //photo info
@@ -61,4 +62,24 @@
   background-size: contain;
   
   opacity: 0.3;
+}
+
+//lines between photos
+.photo-list__item::before {
+  content: "";
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background-color: $bg-color;
+}
+.photo-list__likes--line::after {
+  content: "";
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  background-color: $bg-color;
 }

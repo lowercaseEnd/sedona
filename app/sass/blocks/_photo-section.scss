@@ -1,0 +1,21 @@
+@import "../variables";
+
+.photo-section__header {
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black-color;
+  width: 140px;
+  
+}
+.photo-section__text {
+  font-size: 14px;
+  color: $dark-color;
+  line-height: 1.7;
+  width: 300px;
+  text-align: center;
+}
+.photo-section__header,
+.photo-section__text {
+  text-transform: uppercase;
+  margin: 0 auto;
+}
