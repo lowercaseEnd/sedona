@@ -1,12 +1,13 @@
 @import "../variables";
 
 .controls {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
   margin-top: -50px;
 }
-
+@media (min-width: $tablet-width) { 
+  .controls {
+    margin-top: -93px;
+  }
+}
 .controls__range {
   width: 280px;
   height: 45px;
@@ -33,6 +34,21 @@
   border-radius: 50%;
   background-color: $white-color;
 }
+@media (min-width: $tablet-width) {
+  .controls__range {
+    width: 648px;
+    height: 93px;
+  }
+  .controls__range::before {
+    top: 45px;
+    left: 93px;
+    width: 389px;
+  }
+  .controls__range::after {
+    top: 42px;
+    left: 206px;
+  }
+}
 //buttons
 .controls__buttons {
   display: flex;
@@ -45,5 +61,34 @@
 }
 .control-button {
   border: none;
+  background-color: transparent;
+}
+@media (min-width: $tablet-width) {
+  .controls__buttons {
+    margin-top: -92px;
+    width: 648px;
+    height: 93px;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+  .control-button {
+    border: none;
 
+    //so buttons will display on top
+    position: relative;
+    z-index: 2;
+  }
+  .right-controls {
+    margin-right: 41px;
+  }
+  .control-button--repeat {
+    margin-left: 35px;
+  }
+}
+
+//svg
+.repeat-svg,
+.subs-svg,
+.full-svg {
+  fill: $white-color;
 }
