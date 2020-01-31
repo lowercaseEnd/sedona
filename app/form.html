@@ -40,15 +40,21 @@
         <form action="" class="review__form form-main">
           <fieldset class="form-main__field form-main__name">
             <legend class="form-main__title">Представтесь:</legend>
-            <div class="form-main__name--container">
-              <label class="form-main__label" for="name">Имя<sup>*</sup>:</label>
-              <input class="input-text input-text--name" type="text" name="" id="name" placeholder="Пётр">
-              <label class="form-main__label" for="last-name">Фамилия<sup>*</sup>:</label class="form-main__label">
-              <input class="input-text input-text--last-name" type="text" name="" id="last-name" placeholder="Иванов">
-              <label class="form-main__label" for="father-name">Отчество<sup>*</sup>:</label class="form-main__label">
-              <input class="input-text input-text--father-name" type="text" name="" id="father-name"
-                placeholder="Александрович">
-            </div>
+            <ul class="name-list">
+              <li class="name-list__item">
+                <label class="form-main__label" for="name">Имя<sup>*</sup>:</label>
+                <input class="input-text name-list__name" type="text" name="" id="name" placeholder="Пётр">
+              </li>
+              <li class="name-list__item">
+                <label class="form-main__label" for="last-name">Фамилия<sup>*</sup>:</label class="form-main__label">
+                  <input class="input-text name-list__last-name" type="text" name="" id="last-name" placeholder="Иванов">
+              </li>
+              <li class="name-list__item">
+                <label class="form-main__label" for="father-name">Отчество<sup>*</sup>:</label class="form-main__label">
+                  <input class="input-text name-list__father-name" type="text" name="" id="father-name"
+                    placeholder="Александрович">
+                  </ul>
+              </li>
           </fieldset>
           <fieldset class="form-main__field form-main__contact-info">
             <legend class="form-main__title">Контактная информация:</legend>

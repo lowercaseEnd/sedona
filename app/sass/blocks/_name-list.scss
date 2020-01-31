@@ -1,0 +1,34 @@
+@import "../variables";
+
+//name info
+.name-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  align-items: center;
+}
+
+.name-list__name {
+  width: 239px;
+}
+.name-list__last-name {
+  width: 200px;
+}
+.name-list__father-name {
+  width: 194px;
+}
+@media (min-width: $tablet-width) {
+  .name-list__name {
+    width: 225px;
+  }
+  .name-list__last-name {
+    width: 186px;
+  }
+  .name-list__father-name {
+    width: 180px;
+  }
+
+}
+@media (min-width: $desktop-width) { 
+
+}
