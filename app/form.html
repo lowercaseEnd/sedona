@@ -52,14 +52,16 @@
           </fieldset>
           <fieldset class="form-main__field form-main__contact-info">
             <legend class="form-main__title">Контактная информация:</legend>
-            <div class="form-main__field--container">
-              <label class="form-main__label" for="phone">Контактный телефон<sup>*</sup>:</label
-                class="form-main__label">
-              <input class="input-text input-text--number" type="number" name="" id="phone">
-              <label class="form-main__label" for="email">Электронная почта<sup>*</sup>:</label
-                class="form-main__label">
-              <input class="input-text input-text--email" type="email" name="" id="email">
-            </div>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <label class="contact-list__label" for="phone"><span class="no-desktop">Контактный</span> телефон<sup>*</sup>:</label>
+                <input class="input-text contact-list__number" type="number" name="" id="phone">
+              </li>
+              <li class="contact-list__item">
+                <label class="contact-list__label" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="input-text contact-list__email" type="email" name="" id="email">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form-main__field form-main__score">
             <legend class="form-main__title">ВАше Общее впечатление:</legend>
@@ -113,8 +115,11 @@
           </fieldset>
           <fieldset class="form-main__field form-main__send">
             <legend class="visually-hidden">Отправить форму</legend>
-            <button type="submit" class="button">ОТПРАВИТЬ ОТЗЫВ</button>
-            <p class="important--tablet">* — обязательные поля</p>
+            <div class="form-send--container">
+              <button type="submit" class="button button-send">ОТПРАВИТЬ ОТЗЫВ</button>
+              <p class="important--tablet">* — обязательные поля</p>
+            </div>
+
           </fieldset>
 
         </form>

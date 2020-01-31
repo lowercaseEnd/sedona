@@ -13,6 +13,16 @@
   margin: 0 auto;
   margin-bottom: 60px;
 }
+@media (min-width: $tablet-width) {
+  .sights-list {
+    flex-direction: row;
+    width: 500px;
+  }
+  .sights-list__item {
+    width: 200px;
+    margin-top: 60px;
+  }
+}
 .sights-list__checkbox {
   display: none;
 }
