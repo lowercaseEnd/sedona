@@ -225,7 +225,7 @@ ul {
 .container {
   background-image: url("../sedona-photo-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .container {
