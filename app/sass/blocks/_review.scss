@@ -1,5 +1,9 @@
 @import "../variables";
 
+.review {
+  margin-top: 40px;
+}
+
 .review__header {
   font-size: 18px;
   line-height: 1.4;
@@ -12,8 +16,19 @@
   font-size: 14px;
   line-height: 1.7;
   color: $dark-color;
-  width: 270px;
-  margin: 0 auto;
+  width: 295px;
+  margin: 40px auto 0;
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: $tablet-width) {
+  .review__header {
+    font-size: 30px;
+    line-height: 0.8;
+    width: 360px;
+  }
+  .review__help {
+    width: 470px;
+  }
+ 
 }

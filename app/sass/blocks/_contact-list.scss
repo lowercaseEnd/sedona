@@ -54,6 +54,12 @@
   .contact-list::after {
     left: 551px;
   }
+  .contact-list::after {
+    top: 146px
+  }
+  .contact-list::before {
+    top: 44px
+  }
 }
 @media (min-width: $desktop-width) { 
   .no-desktop {

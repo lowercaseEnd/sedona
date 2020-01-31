@@ -95,6 +95,20 @@
   .form-main__sights {
     margin: 0 auto;
   }
+  .form-main__sights,
+  .form-main__emotions,
+  .form-main__send,
+  .form-main__contact-info {
+    width: 648px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .form-main__sights,
+  .form-main__emotions,
+  .form-main__send,
+  .form-main__contact-info {
+    width: 960px;
+  }
 }
 //text-area
 .form-main__textarea {
@@ -102,10 +116,16 @@
   height: 160px;
   background-color: $bg-color;
   resize: none;
+  border: none;
 }
 @media (min-width: $tablet-width) {
   .form-main__textarea {
     width: 648px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-main__textarea {
+    width: 960px;
   }
 }
 //text that does not appear on mobile
@@ -134,4 +154,21 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+//lines between widgets
+.form-main__field {
+  position: relative;
+}
+.form-main__field::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: $disabled-color;
+  top: -13px;
+  left: 0;
+}
+.form-main__send::before {
+  content: none;
 }
