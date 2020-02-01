@@ -7,16 +7,20 @@
   position: relative;
 }
 .advantages-grey__reason {
-  padding-top: 25px;
-  width: 200px;
+  padding-top: 15px;
+  width: 260px;
   text-transform: uppercase;
   margin: 0 auto;
+  line-height: 1.4;
+  font-size: 18px;
 }
 .advantages-grey {
   background-color: #eeeeee;
 }
 .advantages-grey__text {
-  width: 280px;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 270px;
   margin: 0 auto;
   text-transform: uppercase;
 }
@@ -28,7 +32,7 @@
   width: 280px;
   height: 1px;
   position: absolute;
-  top: 178px;
+  top: 165px;
   left: 20px;
   background-color: #d6d6d6;
 }
