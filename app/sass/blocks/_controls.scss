@@ -110,10 +110,36 @@
 }
 
 //svg
+.repeat-svg,
+.subs-svg,
+.full-svg {
+  fill: #5c6870;
+}
+
+.control-button:hover .repeat-svg,
+.control-button:hover .subs-svg,
+.control-button:hover .full-svg {
+  fill: $dark-color;
+}
+.control-button:active .repeat-svg,
+.control-button:active .subs-svg,
+.control-button:active .full-svg {
+  fill: rgba(51, 51, 51, 0.3);
+}
 @media (min-width: $tablet-width) {
   .repeat-svg,
   .subs-svg,
   .full-svg {
     fill: $white-color;
+  }
+  .control-button:hover .repeat-svg,
+  .control-button:hover .subs-svg,
+  .control-button:hover .full-svg {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+  .control-button:active .repeat-svg,
+  .control-button:active .subs-svg,
+  .control-button:active .full-svg {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
