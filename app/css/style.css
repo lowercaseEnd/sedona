@@ -2100,5 +2100,118 @@ input[type=number]::-webkit-outer-spin-button {
     height: 500px;
   }
 }
+.modal {
+  display: none;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.modal__text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.8;
+  width: 250px;
+  margin: 0 auto 30px;
+  text-transform: uppercase;
+}
+
+.modal__mesage {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.4;
+  text-transform: uppercase;
+  width: 230px;
+  margin: 0 auto 20px;
+  padding-top: 50px;
+}
+
+.modal__text--failure {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .modal__text {
+    width: 420px;
+    margin-bottom: 19px;
+  }
+
+  .modal__mesage {
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 380px;
+  }
+
+  .modal__text--failure {
+    width: 340px;
+  }
+
+  .modal__mesage--failure {
+    width: 280px;
+  }
+}
+.modal--success {
+  height: 323px;
+}
+
+.modal--failure {
+  height: 283px;
+}
+
+@media (min-width: 768px) {
+  .modal--success {
+    height: 347px;
+    width: 640px;
+  }
+
+  .modal--failure {
+    height: 347px;
+    width: 400px;
+  }
+}
+.modal__color {
+  width: 320px;
+  height: 98px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .modal__color {
+    width: 640px;
+    height: 146px;
+  }
+}
+.modal__button {
+  border: none;
+  background-color: #81b3d2;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: PTSans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 20px auto 0;
+}
+
+.modal__button--success {
+  width: 280px;
+  height: 58px;
+}
+
+.modal__button--failure {
+  width: 180px;
+  height: 58px;
+}
+
+@media (min-width: 768px) {
+  .modal__button {
+    margin-top: 40px;
+  }
+
+  .modal__button--failure {
+    margin-top: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
