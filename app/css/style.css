@@ -365,7 +365,7 @@ ul {
   .photo-mountains::after {
     width: 1200px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
-    top: 465px;
+    top: 461px;
     width: 1200px;
   }
 }
@@ -374,6 +374,10 @@ ul {
     margin-top: 59px;
   }
 }
+.advantages-section {
+  margin-top: 30px;
+}
+
 .advantages-section__title {
   font-weight: bold;
   line-height: 1.4;
