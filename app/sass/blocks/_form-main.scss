@@ -46,8 +46,11 @@
 
 .form-main__field {
   border: none;
-  margin-top: 35px;
+  margin-top: 50px;
   padding: 0;
+}
+.form-main__name {
+  margin-top: 30px;
 }
 .form-main__title {
   font-size: 18px;
@@ -56,10 +59,15 @@
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  width: 280px;
+  margin: 0 auto;
+}
+.form-main__title--margin {
+  margin-bottom: 20px;
 }
 @media (min-width: $tablet-width) {
-  .form-main__title {
-    // margin-bottom: 20px;
+  .form-main__field {
+    margin-top: 30px;
   }
   .form-main__title--visited {
     width: 290px;
@@ -92,7 +100,7 @@
   .form-main__score {
     order: -1;
     width: 290px;
-    margin-right: 30px;
+    margin-right: 10px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -139,13 +147,11 @@
   background-color: $bg-color;
   resize: none;
   border: none;
-  padding-left: 20px;
+  padding: 10px;
   font-size: 18px;
   font-weight: bold;
 }
 .form-main__textarea::placeholder {
-
-
   color: $black-color;
 }
 @media (min-width: $tablet-width) {
@@ -204,8 +210,20 @@
   width: 320px;
   height: 1px;
   background-color: $disabled-color;
-  top: -13px;
+  top: -15px;
   left: 0;
+}
+//firefox only since it does not position items correctly
+@-moz-document url-prefix() {
+  .form-main__field::before {
+    top: -40px;
+  }
+  .form-main__field:not(:nth-child(1))::before {
+    top: -65px;
+  }
+  .form-main__field:nth-child(4)::before {
+    top: -85px;
+  }
 }
 .form-main__send::before {
   content: none;
@@ -218,9 +236,10 @@
     content: "";
     position: absolute;
     width: 1px;
+    height: 260px;
     background-color: $disabled-color;
-    top: -13px;
-    left: -20px;
+    top: 6px;
+    left: 0;
   }
   .form-main__contact-info::before,
   .form-main__sights::before,
@@ -243,6 +262,25 @@
     background-color: $disabled-color;
     top: 9px;
     left: 470px;
+  }
+  .form-main__sights::before,
+  .form-main__sights::after {
+    top: 19px;
+  }
+  //firefox only
+  @-moz-document url-prefix() {
+    .form-main__field:nth-child(2)::before,
+    .form-main__field:nth-child(2)::after {
+      top: -32px;
+    }
+    .form-main__field:nth-child(4)::before,
+    .form-main__field:nth-child(4)::after {
+      top: -45px;
+    }
+    .form-main__field:nth-child(5)::before,
+    .form-main__field:nth-child(5)::after {
+      top: -35px;
+    }
   }
 }
 

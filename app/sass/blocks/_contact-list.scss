@@ -1,5 +1,17 @@
 @import "../variables";
 
+//text input number
+/* Remove controls from Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Remove controls from Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; /* Removes leftover margin */
+}
+
 //contact info
 .contact-list {
   display: flex;
@@ -39,6 +51,7 @@
   width: 221px;
   margin-top: 14px;
 }
+
 .contact-list__label {
   margin-left: 40px;
 }
