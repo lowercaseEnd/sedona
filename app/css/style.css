@@ -2107,6 +2107,10 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.15);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal__text {
   font-size: 14px;
   color: #333333;
