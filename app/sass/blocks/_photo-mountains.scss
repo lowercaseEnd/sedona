@@ -96,6 +96,11 @@
   background-size: contain;
 }
 
+
+.photo-mountains__text {
+  width: 282px;
+  height: 214px;
+}
 @media (min-width: $tablet-width) {
   .photo-mountains {
     min-height: 518px;
@@ -111,7 +116,7 @@
   }
   .photo-mountains__text {
     width: 460px;
-    height: 79px;
+    height: 350px;
   }
 }
 

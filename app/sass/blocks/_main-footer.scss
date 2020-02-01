@@ -50,14 +50,19 @@
   margin: 0 auto;
   margin-top: 36px;
 }
-
+//svg icon in differnt states
 .html-svg {
   width: 47px;
   height: 44px;
   margin-top: 9px;
   margin-left: 9px;
 }
-
+.html-svg:hover .academy-svg {
+  fill: $blue-color--hover;
+}
+.html-svg:active .academy-svg {
+  fill: rgba(129, 179, 210, 0.3);
+}
 .main-footer__by--text {
   text-transform: uppercase;
   font-size: 14px;

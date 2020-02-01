@@ -222,6 +222,18 @@ ul {
     margin-right: 175px;
   }
 }
+.site-list__link--active {
+  color: #766357;
+}
+
+.site-list__link--active:hover {
+  color: #604e43;
+}
+
+.site-list__link--active:active {
+  color: rgba(118, 99, 87, 0.3);
+}
+
 .container {
   width: 320px;
   margin: 0 auto;
@@ -338,6 +350,11 @@ ul {
   background-size: contain;
 }
 
+.photo-mountains__text {
+  width: 282px;
+  height: 214px;
+}
+
 @media (min-width: 768px) {
   .photo-mountains {
     min-height: 518px;
@@ -359,7 +376,7 @@ ul {
 @media (min-width: 768px) {
   .photo-mountains__text {
     width: 460px;
-    height: 79px;
+    height: 350px;
   }
 }
 @media (min-width: 1200px) {
@@ -993,6 +1010,14 @@ ul {
   margin-left: 9px;
 }
 
+.html-svg:hover .academy-svg {
+  fill: #669ec0;
+}
+
+.html-svg:active .academy-svg {
+  fill: rgba(129, 179, 210, 0.3);
+}
+
 .main-footer__by--text {
   text-transform: uppercase;
   font-size: 14px;
@@ -1029,6 +1054,18 @@ ul {
   padding: 13px;
   width: 48px;
   height: 49px;
+}
+
+.social-svg:hover {
+  background-color: #669ec0;
+}
+
+.social-svg:active {
+  background-color: #5496bd;
+}
+
+.social-svg:active .social-svg--icon {
+  opacity: 0.3;
 }
 
 .map__picture {

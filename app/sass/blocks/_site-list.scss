@@ -66,7 +66,6 @@
   }
   .site-list__link:hover {
     color: $blue-color--hover;
-
   }
   .site-list__item:active {
     background-color: $white-color;
@@ -88,4 +87,15 @@
   .site-list__item:nth-child(2) {
     margin-right: 175px;
   }
+}
+
+//active links
+.site-list__link--active {
+  color: $menu-color;
+}
+.site-list__link--active:hover {
+  color: $menu-color--hover;
+}
+.site-list__link--active:active {
+  color: $menu-color--active;
 }
