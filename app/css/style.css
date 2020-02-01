@@ -446,7 +446,12 @@ ul {
   .advantages-list__reason {
     width: 180px;
     margin: 0 auto;
-    padding-top: 32px;
+    padding-top: 29px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-list__reason {
+    padding-top: 45px;
   }
 }
 .advantages-list__text {
@@ -460,7 +465,12 @@ ul {
 
 @media (min-width: 768px) {
   .advantages-list__text {
-    width: 180px;
+    width: 170px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages-list__text {
+    width: 280px;
   }
 }
 .advantages-list__number {
@@ -681,7 +691,7 @@ ul {
   .benefits-list__text {
     width: 280px;
     text-align: center;
-    width: 180px;
+    width: 172px;
     margin: 0 auto;
     padding-top: 15px;
   }
@@ -850,19 +860,9 @@ ul {
 }
 .hotel {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
-@media (min-width: 768px) {
-  .hotel {
-    margin-top: 120px;
-  }
-}
-@media (min-width: 1200px) {
-  .hotel {
-    margin-top: 60px;
-  }
-}
 .hotel__question {
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -916,7 +916,7 @@ ul {
 @media (min-width: 768px) {
   .button {
     width: 458px;
-    margin-top: 54px;
+    margin-top: 34px;
   }
 }
 @media (min-width: 1200px) {

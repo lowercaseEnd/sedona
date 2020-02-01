@@ -27,7 +27,12 @@
   .advantages-list__reason {
     width: 180px;
     margin: 0 auto;
-    padding-top: 32px;
+    padding-top: 29px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .advantages-list__reason {
+    padding-top: 45px;
   }
 }
 .advantages-list__text {
@@ -40,7 +45,12 @@
 }
 @media (min-width: $tablet-width) {
   .advantages-list__text {
-    width: 180px;
+    width: 170px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .advantages-list__text {
+    width: 280px;
   }
 }
 .advantages-list__number {
