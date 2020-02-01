@@ -42,3 +42,9 @@
     margin: 0 auto;
   }
 }
+@media (min-width: $desktop-width) {
+  .video-section__thumbnail {
+    width: 800px;
+    height: 500px;
+  }
+}

@@ -49,6 +49,20 @@
     left: 206px;
   }
 }
+@media (min-width: $tablet-width) {
+  .controls__range {
+    width: 800px;
+  }
+  .controls__range::before {
+    top: 45px;
+    left: 93px;
+    width: 540px;
+  }
+  .controls__range::after {
+    top: 42px;
+    left: 206px;
+  }
+}
 //buttons
 .controls__buttons {
   display: flex;
@@ -83,6 +97,15 @@
   }
   .control-button--repeat {
     margin-left: 35px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .controls__buttons {
+    margin-top: -92px;
+    width: 800px;
+  }
+  .control-button--subs {
+    margin-right: 20px;
   }
 }
 

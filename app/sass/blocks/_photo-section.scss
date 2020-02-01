@@ -5,7 +5,6 @@
   line-height: 1.4;
   color: $black-color;
   width: 140px;
-  
 }
 .photo-section__text {
   font-size: 14px;
@@ -17,7 +16,7 @@
 .photo-section__header,
 .photo-section__text {
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 @media (min-width: $tablet-width) {
   .photo-section {

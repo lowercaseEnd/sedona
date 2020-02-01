@@ -1,13 +1,6 @@
 @import "../variables";
 
 
-//test
-.container {
-  background-image: url("../sedona-photo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .container {
   width: 320px;
   margin: 0 auto;
@@ -17,14 +10,12 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    background-image: url("../sedona-photo-tablet.jpg");
     width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    // background-image: url("../sedona-form-desktop.jpg");
     width: $desktop-width;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
