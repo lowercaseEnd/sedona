@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch app/sass/style.scss:app/css/style.css"
+    "sass": "sass --watch app/sass/style.scss:app/css/style.css",
+    "imagemin": "imagemin app/img/* --out-dir=app/img"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "imagemin-cli": "^5.1.0",
     "node-sass": "^4.13.0"
   }
 }
