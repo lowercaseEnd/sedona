@@ -179,12 +179,15 @@
 }
 
 //button
-
+.button-send {
+  margin-left: 20px;
+}
 @media (min-width: $tablet-width) {
   .form-main__send {
     width: 648px;
   }
   .button-send {
+    margin-left: 0;
     width: 324px;
   }
   .form-send--container {
