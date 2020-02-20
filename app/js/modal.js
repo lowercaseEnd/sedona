@@ -7,12 +7,10 @@ let closePopupFailure = document.getElementsByClassName("modal__button")[1];
 let buttonSend = document.getElementById("send-btn");
 //name and contact info
 let name = document.getElementsByClassName("input-text");
-
-console.log(modalFailure, modalSuccess, buttonSend);
-
+console.log(name[0]);
 buttonSend.addEventListener("click", (event) => {
   event.preventDefault();
-  for(form of name) {
+  for(let form of name) {
     if(!form.value) {
       modalFailure.classList.add("modal-show");
       break;

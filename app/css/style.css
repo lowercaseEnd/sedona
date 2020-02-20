@@ -1068,15 +1068,40 @@ ul {
   opacity: 0.3;
 }
 
+.map {
+  position: relative;
+}
+
 .map__picture {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
 
+.map::before {
+  content: "";
+  position: absolute;
+  top: 160px;
+  left: 145px;
+  height: 27px;
+  width: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .map::before {
+    left: 369px;
+  }
+}
 @media (min-width: 1200px) {
   .map__picture {
     width: 1200px;
+  }
+
+  .map::before {
+    left: 587px;
   }
 }
 .review {
